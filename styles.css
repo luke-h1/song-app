@@ -8,4 +8,89 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+header { 
+  padding: 50px 0;  /* top bottom left + right */ 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-image: url(/static/header-bg.jpeg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
+  color: #fff; 
+  /* background-blend-mode: ; */
+}
+/* 
+if doing background-blend-mode use the following to ensure text isn't displayed with blend mode 
+header * { z-index: 5 } 
+*/
+
+
+
+.header-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.form-container { 
+  width: 800px;
+  max-width: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+}
+
+
+
+/* .form-control {
+} */
+
+
+
+.form-control input {
+  border:0;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 30px; 
+  width: 100%;
+  text-align: center;
+  
+}
+
+.form-control form { 
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+.form-control button {
+  border: 0;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
+  margin-left: 7em; 
+  margin-top: 1em;
+  padding: 15px 15px; 
+  background-color: #56cfe1;
 }
