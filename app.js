@@ -2,7 +2,16 @@ const form = document.getElementById('form');
 const query = document.getElementById('query');
 const result = document.getElementById('results');
 const pagination = document.getElementById('more');
+const errorEl = document.getElementById('error');
 const API_URL = `https://api.lyrics.ovh`;
+
+
+function showError(message){
+  errorEl.innerHTML = message;
+  setTimeout(() => { 
+    errorEl.innerHTML = ''; 
+  }, 2000)
+}
 
 async function getSongs(term) {
   const res = await fetch(`${API_URL}/suggest/${term}`);
@@ -80,7 +89,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const searchTerm = query.value.trim();
   if (!searchTerm) {
-    console.log('123456');
+    showError('enter a valid song / artist')
   } else {
     getSongs(searchTerm);
   }

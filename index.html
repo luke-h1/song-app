@@ -5,33 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous"
-  />
-  <title>Song & Lyric App</title>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Song & Lyric App</title>
   </head>
-  <body> 
+  <body>
     <header>
       <h1 class="header-title">Song & Lyric App</h1>
       <i class="fa fa-headphones" aria-hidden="true"></i>
-    </header> 
+    </header>
+    <h1 id="error" class="error"></h1>
     <div class="form-container">
       <form id="form" class="form-control">
-        <input type="search" id="query" placeholder="song / artist" /> 
+        <input type="search" id="query" placeholder="song / artist" />
         <div class="btn-container">
-        <button><i class="fa fa-chevron-right" aria-hidden="true"></i></i>Search
-          
-        </button>
-      </div>
+          <button>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>Search
+          </button>
+        </div>
       </form>
-    </div> 
-    <div id="results" class="container">
-    </div> 
+    </div>
+    <div id="results" class="container"></div>
     <div id="more" class="container centered"></div>
-
-
 
     <script src="app.js"></script>
   </body>
