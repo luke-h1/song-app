@@ -24,7 +24,7 @@ function showData(data) {
     output += ` 
     <div class="grid-container"> 
       <div class="card"> 
-          <h6 class="card-title">${song.artist.name}</strong> - ${song.title}</h6> 
+          <h3 class="card-title">${song.artist.name}</strong> - ${song.title}</h3> 
           <div class="list-item"> 
           <img src="${song.album.cover}" class="card-image"/> 
           <ul class="songs">

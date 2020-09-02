@@ -112,7 +112,7 @@ header * { z-index: 5 }
 ul.songs { 
   list-style-type: none;
   padding: 0; 
-  width: 40%;
+  width: 100%;
 }
 
 ul.songs li { 
@@ -192,7 +192,8 @@ ul.songs li {
   margin: 0 auto;
   margin-bottom: 1em;
   margin-top: 1em;
-  text-align: center;
+  text-align: center; 
+  padding-bottom: 2em;
 }
 
 .card-image { 
@@ -212,3 +213,10 @@ ul.songs li {
   top: -90px;
   right: -300px;
 } 
+
+
+.card-title { 
+  color: #000;
+  margin: 0 ;
+  text-align: center;
+}
