@@ -45,13 +45,12 @@ function showData(data) {
             </div> 
             <div class="preview-container"> 
             <audio controls>
-            <source src="https://cors-anywhere.herokuapp.com/${song.preview}" type="audio/ogg">
+            <source src="${song.preview}" type="audio/ogg">
           </audio> 
           </div> 
           </div> 
           </div> 
           </div> 
-
     `;
 
     if (data.prev || data.next) {
@@ -105,7 +104,3 @@ result.addEventListener('click', (e) => {
     getLyrics(artist, title);
   }
 });
-
-
-
-// theaudiodb.com/api/v1/json/1/search.php?s="query / artist here"
