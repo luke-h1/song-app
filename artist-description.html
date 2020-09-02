@@ -10,11 +10,31 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+  
     <title>Song & Lyric App</title>
   </head>
   <body>
+    <header>
+      <h1 class="header-title">Artist Description</h1>
+      <i class="fa fa-headphones" aria-hidden="true"></i>
+    </header>
+    <h1 id="error" class="error"></h1>
+    <div class="form-container">
+    <form id="form" class="form-control">
+      <input type="search" id="query" placeholder="song / artist" />
+      <div class="btn-container">
+        <button>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>Search
+        </button>
+      </div>
+    </form>
+    </div>
+    <div id="results" class="container"></div>
+    <div id="more" class="container centered"></div>
     <!-- TODO: ADD CARD FOR ARTIST DESCRIPTION HERE -->
 <!-- API_URL: theaudiodb.com/api/v1/json/1/search.php?s="query / artist here" -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="app2.js"></script>
   </body>
 </html>

@@ -224,3 +224,64 @@ ul.songs li {
 .error { 
   text-align: center;
 }
+
+
+
+/* ARTIST DESCRIPTION PAGE */
+.row { 
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 500px; 
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center; 
+  padding-bottom: 1em;
+
+}
+
+.card-image { 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img { 
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+
+}
+
+.songs-ul { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+
+}
+
+.song-ul li { 
+  text-align:center; 
+  margin: 0 auto; 
+  list-style-type: none;
+  position: absolute;
+
+}
+
+.card-content { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item { 
+  margin-top: 1em;
+}
