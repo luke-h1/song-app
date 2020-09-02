@@ -5,7 +5,6 @@
   * fetch artists + songs  ✅
   * fetch lyrics ✅
   * fetch artist image ✅
-  * fetch deezer preview + link ✅
+  * use the spotify API or another music API to actually fetch the song as there is an issue with deezer's certificate (CERT_NAME_INVALID)  
   * display all of the above in a card  ✅
-  * integrate spotify API if possible into card 
   * cleanup, refactor & lint everything 
