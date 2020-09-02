@@ -82,15 +82,51 @@ header * { z-index: 5 }
   position: relative;
   width: 500px;
   max-width: 100%;
+
 }
 
 .form-control button {
   border: 0;
   border-radius: 25px;
-  width: 50%;
+  width: 30%;
   text-align: center;
   margin-left: 7em; 
   margin-top: 1em;
-  padding: 15px 15px; 
+  padding: 15px 30px; 
   background-color: #56cfe1;
+  top: 2px;
+  right: 2px;
+  position: absolute;
+}
+
+.btn {
+  background-color: #2F9C95;
+  border: 0 ;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+ul.songs { 
+  list-style-type: none;
+  padding: 0; 
+  width: 40%;
+}
+
+ul.songs li { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.container { 
+  margin: 30px auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+
+.btn-container { 
+  max-width: 100%; 
 }
