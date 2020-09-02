@@ -105,6 +105,8 @@ header * { z-index: 5 }
   border-radius: 10px;
   color: #fff;
   padding: 5px 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 ul.songs { 
@@ -130,3 +132,83 @@ ul.songs li {
 .btn-container { 
   max-width: 100%; 
 }
+
+.cont-grid { 
+  display: grid; 
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+}
+
+
+.link audio { 
+  margin-left: 3em;
+  width: 100%; 
+}
+
+.images { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.images img { 
+  position: absolute;
+  top:-50px ;
+  left: 10px;
+  bottom: 10px;
+}
+
+
+
+.list-item { 
+  align-items: center;
+  justify-content: center;
+}
+
+.card { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+
+}
+
+.grid-container { 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 740px; 
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.card-image { 
+  object-fit: cover;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.preview-container { 
+  position: relative;
+
+}
+
+.preview-container audio { 
+  position: absolute; 
+  top: -90px;
+  right: -300px;
+} 
