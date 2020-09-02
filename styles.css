@@ -88,14 +88,14 @@ header * { z-index: 5 }
 .form-control button {
   border: 0;
   border-radius: 25px;
-  width: 30%;
+  width: 10%;
   text-align: center;
   margin-left: 7em; 
   margin-top: 1em;
   padding: 15px 30px; 
   background-color: #56cfe1;
-  top: 2px;
-  right: 2px;
+  top:255px;
+  left: 665px;
   position: absolute;
 }
 
@@ -140,14 +140,6 @@ ul.songs li {
 }
 
 
-.link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 300px;
-}
 
 
 .link audio { 
@@ -220,3 +212,4 @@ ul.songs li {
   margin: 0 ;
   text-align: center;
 }
+

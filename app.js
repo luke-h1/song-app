@@ -28,8 +28,12 @@ function showData(data) {
           <div class="list-item"> 
           <img src="${song.album.cover}" class="card-image"/> 
           <ul class="songs">
-              <button class="btn" data-artist=${song.artist.name} data-songtitle="${song.title}">Get Lyrics </button> 
+              <button class="btn" data-artist=${song.artist.name} data-songtitle="${song.title}">Get Lyrics </button>                               
             </ul>  
+            <div class="link-item">
+            <br>
+            <a href="${song.artist.link}" target="_blank" class="link"><button class="btn">Go To Artist</button><a/>   
+            </div> 
             <div class="preview-container"> 
             <audio controls>
             <source src="${song.preview}" type="audio/ogg">
@@ -40,7 +44,7 @@ function showData(data) {
           </div> 
 
     `;
-    
+
     if (data.prev || data.next) {
       pagination.innerHTML = `
   ${
