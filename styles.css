@@ -45,6 +45,8 @@ header * { z-index: 5 }
 
 
 
+
+
 .header-title {
   font-size: 35px;
   font-weight: 600;
@@ -227,18 +229,22 @@ ul.songs li {
 
 
 
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+ }
 /* ARTIST DESCRIPTION PAGE */
 .row { 
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  width: 500px; 
+  width: 300px; 
+  height: 500px;
   margin: 0 auto;
   margin-bottom: 1em;
-  margin-top: 1em;
   text-align: center; 
   padding-bottom: 1em;
-
 }
 
 .card-image { 

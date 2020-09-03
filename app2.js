@@ -18,7 +18,8 @@ async function getData(term){
 function showDataDOM(data){
   let output = '';
   data.artists.forEach((artist) => {
-    output += `
+    output += ` 
+    <div class="wrapper-grid"> 
     <div class="row">
       <div class="card-image">
       <img src="${artist.strArtistThumb}">
@@ -39,6 +40,7 @@ function showDataDOM(data){
         </div>
       </div>
     </div>
+    </div> 
     </div> 
     
     `
