@@ -44,9 +44,6 @@ function showData(data) {
             <a href="${song.artist.link}" target="_blank" class="link"><button class="btn">Go To Artist</button><a/>   
             </div> 
             <div class="preview-container"> 
-            <audio controls>
-            <source src="${song.preview}" type="audio/ogg">
-          </audio> 
           </div> 
           </div> 
           </div> 
